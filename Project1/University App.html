@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html manifest="manifest.appcache">
+<head>
+    <title>University App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="scripts/jscript.js" type="text/javascript"></script>
+</head>
+<body>
+          <div data-role="page" id="pageHome">
+    <div data-role="header">
+      <h1>University Database</h1>
+    </div>
+    <div data-role="content">
+      Name:
+      <input type="text" placeholder="Name" id="Name">
+      Address:
+      <input type="text" placeholder="Address" id="Address">
+	  Phone:
+	  <input type="text" placeholder="Phone" id="Phone">
+	  <br/>
+	  <br/>
+        <a data-role="button" id="btnEnter" onclick="saveUniDetail()">Save</a>
+		 <a data-role="button" id="btnDelete" onclick="removeUni()">Delete</a>
+	  <br/>
+	  <br/>
+	  Search:
+      <input type="text" placeholder="Search" id="Search">
+	  <br />
+	  <a data-role="button" id="btSearch" onclick="findUni()">Search</a>
+	  <br/>
+	  <a data-role="button" id="btDisplayRecords" onclick="showRecords()">Display All Records</a>
+	  <table id="tblRecords" border="1px">
+	  </table>
+    </div>
+	<div data-role="footer">
+      <h5><b>by Sivakarthikeyan(A00442434) </b></h5>
+	  </div>
+	 </div>
+</body>
+</html>
